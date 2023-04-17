@@ -35,5 +35,7 @@ class Vigenere_Cipher:
 
 # Create a new object of the Vigenere_Cipher
 # Execute the cipher method
+vcipher = Vigenere_Cipher (plaintext.upper(), keyword.upper())
+cipher_text = vcipher.cipher()
 
 # Print the cipher text message 
