@@ -1,3 +1,11 @@
+# Import pyfiglet module for different fonts
+import pyfiglet
+
+# Set and print the title of the activity in color and different font
+title_of_assign = "Lab Exercise 1"
+font = "slant"
+print("\033[38;5;206m", pyfiglet.figlet_form(title_of_assign, font=font))
+
 # Start of pseudocode
 
 # Ask user to enter plaintext message and keyword in all uppercase letters, no spaces. Make the plaintext and keyword in uoppercase.
