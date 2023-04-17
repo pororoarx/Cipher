@@ -30,8 +30,8 @@ class Vigenere_Cipher:
             ciphertext += chr(cipher_number + 65)
             keyword_letter = (keyword_letter + 1) % len(self.keyword)
 
-
         # Return the ciphertext string
+        return ciphertext
 
 # Create a new object of the Vigenere_Cipher
 # Execute the cipher method
