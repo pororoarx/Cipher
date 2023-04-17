@@ -39,3 +39,4 @@ vcipher = Vigenere_Cipher (plaintext.upper(), keyword.upper())
 cipher_text = vcipher.cipher()
 
 # Print the cipher text message 
+print("The secret code is:", cipher_text)
