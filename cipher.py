@@ -1,10 +1,15 @@
+# LAB EXERCISE NO 1
+# PROBLEM 3
+# a program that asks the user for the plaintext (all uppercase letters, no spaces) and the keyword (all uppercase letters) and produce the ciphertext using the Vigenère cipher.
+
+
 # Import pyfiglet module for different fonts
 import pyfiglet
 
 # Set and print the title of the activity in color and different font
 title_of_assign = "Lab Exercise 1"
 font = "slant"
-print("\033[38;5;206m", pyfiglet.figlet_form(title_of_assign, font=font))
+print("\033[38;5;206m", pyfiglet.figlet_format(title_of_assign, font=font))
 
 # Start of pseudocode
 
@@ -47,4 +52,5 @@ vcipher = Vigenere_Cipher (plaintext.upper(), keyword.upper())
 cipher_text = vcipher.cipher()
 
 # Print the cipher text message 
-print("The secret code is:", cipher_text)
+print("\033[92mThe secret code is:")
+print("\033[95m" + cipher_text)
