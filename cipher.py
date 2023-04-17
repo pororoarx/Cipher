@@ -8,7 +8,12 @@ keyword = input("Enter your keyword (all uppercase letters): ")
 keyword = keyword.upper()
 
 # Create a class called "Vigenere_Cipher" that takes plaintext and keyword as an input
+class Vigenere_Cipher:
     # Inside the class, initialize the class with the plaintext and keyword
+    def __init__(self, plaintext, keyword):
+        self.plaintext = plaintext.upper()
+        self.keyword = keyword.upper()
+        self.key_letter = [ord(letter) - 65 for letter in self.keyword]
 
     # Create a function called "cipher" to define the cipher method for the Vigenere_Cipher class
         # Create an empty string "ciphertext"
